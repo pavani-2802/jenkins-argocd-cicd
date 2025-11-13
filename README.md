@@ -6,6 +6,7 @@ Here are the step-by-step details to set up an end-to-end Jenkins pipeline for a
 
 Prerequisites:
 
+
    -  Java application code hosted on a Git repository
    -  Jenkins server
    -  EKS Kubernetes cluster
