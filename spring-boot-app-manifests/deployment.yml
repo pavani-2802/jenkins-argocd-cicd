@@ -1,8 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-app-deployment
-  namespace: argocd-operators   
+  name: spring-boot-app-deployment  
 spec:
   replicas: 1
   selector:
@@ -18,3 +17,4 @@ spec:
           image: pavanif5/jenkins-argocd-cicd:24  
           ports:
             - containerPort: 8080
+
