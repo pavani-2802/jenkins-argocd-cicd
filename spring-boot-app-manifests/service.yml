@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: spring-boot-app-external-service
-  namespace: argocd-operators
-spec:
-  type: ClusterIP
-  ports:
-    - name: http
-      port: 80 
-      protocol: TCP
-      targetPort: 8080 
-  selector:
+  name: spring-boot-app-service
+  labels: 
     app: spring-boot-app
+spec:
+  selector:
+    app: spring-boot-app 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
