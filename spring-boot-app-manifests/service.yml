@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: spring-boot-app-service
-  labels: # <-- Labels MUST be here, nested under 'metadata'
+  labels: # <-- MUST be indented EXACTLY here
     app: spring-boot-app
 spec:
   selector:
-    app: spring-boot-app # <-- Selector labels are in 'spec'
+    app: spring-boot-app # <-- MUST be indented EXACTLY here under 'spec'
   ports:
     - protocol: TCP
       port: 80
