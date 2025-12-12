@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-boot-app-deployment
@@ -17,5 +17,6 @@ spec:
           image: pavanif5/jenkins-argocd-cicd:25 
           ports:
             - containerPort: 8080 
+
 
 
